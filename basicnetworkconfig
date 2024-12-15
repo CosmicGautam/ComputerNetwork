@@ -1,0 +1,14 @@
+Router:
+enable
+configure terminal
+interface gig0/0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+interface gig0/0/1
+ip address 192.168.2.1 255.255.255.0
+no shutdown
+exit
+
+PC:
+ip > subnetmask > default gateway(exiting router ip);
